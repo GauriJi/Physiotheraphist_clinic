@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    /* Modern Input Styling */
+    .form-control, input[type="text"], input[type="email"], input[type="password"], select, textarea {
+        @apply w-full rounded-xl border border-gray-200 bg-gray-50 px-4 py-3 text-sm text-gray-800 transition-all focus:border-blue-500 focus:bg-white focus:ring-4 focus:ring-blue-500/10;
+    }
+
+    /* Clean Card Layouts */
+    .card {
+        @apply overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-gray-100 transition-all hover:shadow-md;
+    }
+
+    /* Modern Buttons */
+    .btn {
+        @apply inline-flex items-center justify-center gap-2 rounded-xl px-5 py-2.5 text-sm font-medium transition-all focus:outline-none focus:ring-4;
+    }
+    
+    .btn-primary {
+        @apply bg-blue-600 text-white hover:bg-blue-700 hover:shadow-lg hover:shadow-blue-600/20 focus:ring-blue-600/20;
+    }
+
+    .btn-secondary {
+        @apply bg-gray-100 text-gray-700 hover:bg-gray-200 focus:ring-gray-200/50;
+    }
+
+    .btn-danger {
+        @apply bg-red-600 text-white hover:bg-red-700 hover:shadow-lg hover:shadow-red-600/20 focus:ring-red-600/20;
+    }
+    
+    /* Table Enhancements */
+    table {
+        @apply w-full text-left text-sm text-gray-600;
+    }
+    thead {
+        @apply bg-gray-50 text-xs uppercase text-gray-500;
+    }
+    th, td {
+        @apply px-6 py-4;
+    }
+    tbody tr {
+        @apply border-b border-gray-100 transition-colors hover:bg-gray-50/50;
+    }
+}
